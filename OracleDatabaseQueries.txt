@@ -1,9 +1,6 @@
 OracleDatabaseQueries
 
 
-
-
-
 SELECT  distinct TOPIC as t, SEQ as s FROM HELP order by SEQ;
 SELECT * FROM employees;
 SELECT last_name FROM employees;
