@@ -1,2 +1,2 @@
 # SQLoracleDatabaseQueries
-Basic Database queries using 11g express
+Basic Database queries using 11g 
