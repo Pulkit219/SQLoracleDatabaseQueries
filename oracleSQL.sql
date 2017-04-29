@@ -208,7 +208,16 @@ SELECT emp_name,dept_name FROM dept RIGHT OUTER JOIN emp USING(emp_id) WHERE emp
 SELECT emp_name,dept_name FROM dept LEFT OUTER JOIN emp USING(emp_id);
 
 -----------------FULL OUTER JOIN-----------------------------
+
 SELECT emp_name,dept_name FROM dept FULL OUTER JOIN emp USING(emp_id);
+
+---------------------INNER JOIN----------------
+SELECT emp_name,dept_name FROM dept INNER JOIN emp ON(emp.emp_id = dept.emp_id);
+
+----------USING CLAUSE--------
+SELECT emp_name,dept_name FROM dept INNER JOIN emp USING(EMP_ID);
+
+-----------------CROSS JOIN---------------
 
 
 
