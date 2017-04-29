@@ -187,7 +187,32 @@ INSERT INTO "HR"."EMP" (EMP_ID, EMP_NAME,EMP_SALARY) VALUES('5','Warner','70000'
 
 SELECT * FROM emp;
 
-INSERT INTO "HR"."EMP" (EMP_ID, EMP_NAME,EMP_SALARY) VALUES('1','Steve','20000');
+INSERT INTO "HR"."DEPT" (DEPT_ID,DEPT_NAME,EMP_ID) VALUES('1','Sales','1');
+INSERT INTO "HR"."DEPT" (DEPT_ID,DEPT_NAME,EMP_ID) VALUES('2','Accounts','2');
+INSERT INTO "HR"."DEPT" (DEPT_ID,DEPT_NAME,EMP_ID) VALUES('3','Finance','3');
+INSERT INTO "HR"."DEPT" (DEPT_ID,DEPT_NAME) VALUES('4','IT');
+INSERT INTO "HR"."DEPT" (DEPT_ID,DEPT_NAME) VALUES('5','Marketing');
+
+SELECT * FROM dept;
+
+---------RIGHT OUTER JOIN WITH ON CLAUSE---
+SELECT emp_name,dept_name FROM dept RIGHT OUTER JOIN emp ON(emp.emp_id = dept.emp_id);
+
+--------------QUERY2-----------RIGHT OUTER JOIN WITH USING  CLAUSE----------
+SELECT emp_name,dept_name FROM dept RIGHT OUTER JOIN emp USING(emp_id);
+
+--------------QUERY3-----------RIGHT OUTER JOIN WITH WHERE CLAUSE----------
+SELECT emp_name,dept_name FROM dept RIGHT OUTER JOIN emp USING(emp_id) WHERE emp.EMP_SALARY>30000;
+
+------------------------LEFT OUTER JOIN---------------------
+SELECT emp_name,dept_name FROM dept LEFT OUTER JOIN emp USING(emp_id);
+
+-----------------FULL OUTER JOIN-----------------------------
+SELECT emp_name,dept_name FROM dept FULL OUTER JOIN emp USING(emp_id);
+
+
+
+
 
 
 
