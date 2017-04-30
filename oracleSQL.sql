@@ -218,6 +218,7 @@ SELECT emp_name,dept_name FROM dept INNER JOIN emp ON(emp.emp_id = dept.emp_id);
 SELECT emp_name,dept_name FROM dept INNER JOIN emp USING(EMP_ID);
 
 -----------------CROSS JOIN---------------
+SELECT emp_name,dept_name FROM dept CROSS JOIN emp;
 
 
 
