@@ -221,6 +221,10 @@ SELECT emp_name,dept_name FROM dept INNER JOIN emp USING(EMP_ID);
 SELECT emp_name,dept_name FROM dept CROSS JOIN emp;
 
 
+--------------COPY THE ENTIRE TABLE INTO NEW ONE-----
+INSERT INTO tableName
+SELECT * FROM tableName2;
+
 
 
 
